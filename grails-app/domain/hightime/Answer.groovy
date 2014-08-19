@@ -8,4 +8,8 @@ class Answer {
   static constraints = {
     // question unqiue: answerer
   }
+
+  String toString() { 
+    "Antwort (${question?.question}): ${text}"
+  }
 }

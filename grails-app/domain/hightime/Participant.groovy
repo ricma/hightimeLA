@@ -8,4 +8,8 @@ class Participant {
   static constraints = {
     name unique: true
   }
+
+  String toString() { 
+    "Hochzeitsgast: ${name}"
+  }
 }
