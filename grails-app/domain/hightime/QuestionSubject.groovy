@@ -8,4 +8,8 @@ class QuestionSubject {
   static constraints = {
     name unique: true, nullable: false
   }
+
+  String toString() {
+    name
+  }
 }
