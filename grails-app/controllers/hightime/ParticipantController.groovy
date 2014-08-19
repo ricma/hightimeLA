@@ -7,5 +7,16 @@ class ParticipantController {
   //   http://host:port/appName/participant
   // or
   //   http://host:port/appName/participant/index
-  def index = {}
+  def index = {
+
+    def subjects = QuestionSubject.list()
+
+    def questions = Question.list().groupBy {
+      q -> q.subject }
+
+
+    // This map is the model of the view
+    return [questionsBySubject: questions,
+            subjects: subjects]
+  }
 }
