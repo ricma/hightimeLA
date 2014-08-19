@@ -1,0 +1,11 @@
+package hightime
+
+class Participant {
+  String name
+
+  static hasMany = [answers: Answer]
+
+  static constraints = {
+    name unique: true
+  }
+}
