@@ -6,5 +6,6 @@ class Answer {
   Participant answerer
 
   static constraints = {
+    // question unqiue: answerer
   }
 }
