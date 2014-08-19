@@ -16,6 +16,6 @@ class Question {
   }
 
   String toString() {
-    "${subject.name}: ${question}"
+    "${subject?.name}: ${question}"
   }
 }
