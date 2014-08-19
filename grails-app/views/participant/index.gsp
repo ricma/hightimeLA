@@ -35,8 +35,9 @@
         <dt>Wer?</dt>
         <dd>
           <ul>
-            <li>Braut</li>
-            <li>Bräutigam</li>
+          <g:each in="${subjects}" var="subject">
+            <li>${subject.name}</li>
+          </g:each>
           </ul>
         </dd>
       </dl>
