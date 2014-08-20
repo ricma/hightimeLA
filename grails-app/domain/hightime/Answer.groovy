@@ -7,6 +7,7 @@ class Answer {
 
   static constraints = {
     // question unqiue: answerer
+    text maxSize: 1000
   }
 
   String toString() { 
